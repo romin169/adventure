@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/*******************    Navbar   **********/
+
+.logo{
+  font-size: 28px;
+  border: 1px solid;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 10%;
+  flex-wrap: nowrap;
+}
+
+.heading-logo {
+  color: #ff3c78;
+}
+
+.navbar .nav-li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+
+.navbar .nav-ul .nav-li-a{
+  color: #061e5c;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.navbar .nav-ul .nav-li-a::after{
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.navbar .nav-ul .nav-li-a:hover::after{
+  width: 100%;
+}
+
+.navbar .nav-ul .nav-li-a:hover{
+  color: #ff3c78;
+  background-color: white;
+}
+
+/**************  DROPDOWN ******/
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-ul{
+  display: none;
+  position: absolute;
+  /* background-color:  #55d6aa; */
+  padding: 1px 0;
+  top: 4.3rem;
+}
+
+.dropdown:hover .dropdown-ul{
+  display: block;
+}
+
+.dropdown-li{
+  list-style-type: none;
+  margin: 10px 0;
+}
+ .dropdown .dropdown-li a{
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 20px;
+ }
+
+/*******************  Travel   *********************/
+
+.travel-section{
+  text-align: center;
+  justify-content: center;
+  background-color: #E9F8F9;
+  height: 100%;
+  width: 100%;
+}
+
+.travel-links {
+  margin-top: 80px;
+}
+
+.travel-link{
+  text-decoration: none;
+  color: #061e5c;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 20px;
+  letter-spacing: 0.5px;
+}
+
+.travel-link:hover{
+  color: #ff416c;
+  border-bottom: 1px solid;
+  transition: 0.1s;
+}
+
+
+.heading-travel {
+  color: #061e5c;
+  padding-top: 100px;
+  line-height: 2;
+}
+
+.travel-heading{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.travel-img-div{
+  width:100%;
+  margin-top: 50px;
+}
+
+.travel-img{
+  width: 30%;
+  height:300px;
+  margin: 10px;
+}
+
+.describe-travel{
+  color: #888;
+}
+.active {
+  color: #ff416c;
+  border-bottom: 1px solid #ff416c;
+}

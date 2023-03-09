@@ -1,0 +1,424 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #E9F8F9;
+}
+
+h1{
+  color: #061e5c;
+  font-size: 48px;
+  line-height: 2;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 50px 0;
+}
+
+/**********************  Header  Navbar   **********/
+
+header{
+  background-image: url("/Users/kishanpatel/Desktop/Task Files/task-1/images/adventure-four.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 10%;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.logo{
+  font-size: 28px;
+  border: 1px solid;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.heading-logo {
+  color: #ff3c78;
+}
+
+.navbar .nav-li{
+  list-style-type: none;
+  float: left;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+
+.navbar .nav-ul .nav-li-a{
+  color: #061e5c;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.navbar .nav-ul .nav-li-a::after{
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.navbar .nav-ul .nav-li-a:hover::after{
+  width: 100%;
+}
+
+.navbar .nav-ul .nav-li-a:hover{
+  color: #ff3c78;
+  background-color: white;
+}
+
+/**************  DROPDOWN ******/
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-ul{
+  display: none;
+  position: absolute;
+  padding: 1px 0;
+  top: 4.3rem;
+}
+
+.dropdown:hover .dropdown-ul{
+  display: block;
+}
+
+.dropdown-li{
+  list-style-type: none;
+  margin: 10px 0;
+}
+ .dropdown .dropdown-li a{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 20px;
+  width: 172px;
+ }
+
+/*************  Header  Headings   *********/
+
+ .headings {
+  width: 100%;
+  position: relative;
+  top: 25%;
+  text-align: center;
+ }
+
+ .main-heading{
+   display: inline-block;
+   background: #fbe8c84d;
+   border-radius: 2rem;
+   padding-bottom: 20px;
+ }
+
+ .h1-heading-text{
+   color: #061e5c;
+   letter-spacing: 1px;
+   text-align: center;
+ }
+
+/* ***************** View section     ****** */
+
+.explore-content {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+.about-explore {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.explore-info{
+  width: 60%;
+}
+
+.h5-span{
+  font-size: 16px;
+  border-bottom: 2px solid #ff3c78;
+  padding-bottom: 5px;
+}
+
+h5, .heading-five-text{
+  display: inline-block;
+  margin: 25px 0;
+}
+
+.heading-five-text{
+  font-size: 28px;
+}
+
+.discover{
+  text-align: center;
+}
+
+.discover-title{
+  color: #303133;
+  text-align: center;
+  border-bottom: 2px solid #ff3c78;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.images-section{
+  background-color: #E9F8F9;
+}
+
+.section-heading-image{
+  margin: 0 50px 50px;
+}
+
+.view-span{
+  margin-left: 10px;
+}
+
+.image-heading{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.conatiner-content{
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.content-info{
+  margin: 10px 0;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+.container-img{
+  width: 440px;
+  height: 300px;
+}
+
+.container-text{
+  display: inline-block;
+  width: 440px;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.explore-li-links a{
+  color: #0151c1;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.explore-li-links a:hover{
+  color: #ff3c78;
+}
+
+.explore-li-links {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+/* ***************   Travel Section *********/
+
+.travel-section{
+  display: contents;
+  text-align: center;
+  justify-content: center;
+  height: 1000px;
+  width: 900px;;
+}
+
+.heading-travel {
+  color: #061e5c;
+  margin-top: 40px;
+  line-height: 2;
+}
+
+.big-heading-travel{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.describe-travel{
+  color: #888;
+}
+
+.active {
+  color: #ff416c;
+  border-bottom: 1px solid #ff416c;
+}
+
+.travel-links {
+  margin-top: 30px;
+}
+
+.travel-link{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #061e5c;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 20px;
+  letter-spacing: 0.5px;
+}
+
+.travel-link:hover{
+  color: #ff416c;
+  border-bottom: 1px solid;
+  transition: 0.1s;
+}
+
+.travel-img-div{
+  display: inline-block;
+  padding: 1em 0;
+  width: 30%;
+}
+.travel-img {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* **************    explore  ******   */
+
+.discover-images-container{
+  margin: 100px 0;
+}
+
+
+.travel-img .explore-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.travel-img:hover .explore-overlay{
+  opacity: 1;
+}
+
+.explore-images{
+  width: 100%;
+  height: 300px;
+}
+
+.explore-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.travel-img:hover .explore-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.explore-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+/* ********************   footer   ********** */
+
+footer{
+  position: relative;
+}
+
+.footer{
+  height: 300px;
+  background: #b4e4ffb5;
+  padding: 110px 0px;
+  text-align: center;
+}
+
+.footer .row{
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #061e5c;
+  font-size: 0.8em;
+}
+
+.footer .row a{
+  text-decoration: none;
+  color: #061e5c;
+  transition: 0.5s;
+}
+
+.footer .row a:hover{
+  color: #ff3c78;
+}
+
+.footer .row ul{
+  width: 100%;
+}
+
+.footer .row ul li{
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i{
+  font-size: 2em;
+  margin: 0% 1%;
+}
